@@ -1,0 +1,58 @@
+import { styled } from '@mui/material/styles';
+
+export const StyledError = styled('div')(({ theme }) => ({
+	display: 'flex',
+	width: '100%',
+	padding: '12px',
+	height:'100%',
+	flexDirection: 'column',
+	justifyContent: 'center',
+	alignItems: 'center',
+	gap: '10px',
+	borderRadius: '5px',
+	background: '#FFF',
+	'& .content': {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center',
+		gap: '15px',
+	},
+	'& .content-img': {
+		width: '125px',
+		height: '125px',
+	},
+	'& .content-text': {
+		color: 'var(--color-caption, #6E6D7A)',
+		fontFamily: 'Inter',
+		fontSize: '16px',
+		fontStyle: 'normal',
+		fontWeight: '500',
+		lineHeight: 'normal',
+	},
+	'& .error-text': {
+		color: 'red',
+		fontFamily: 'Inter',
+		fontSize: '12.5px',
+		fontStyle: 'normal',
+		fontWeight: '500',
+		lineHeight: 'normal',
+	},
+	'& .btn': {
+		width: '195px',
+		height: '49px',
+		padding: '15px 20px',
+		border: 'none',
+		borderRadius: '5px',
+		cursor: 'pointer',
+		color: '#fff',
+		fontFamily: 'Inter',
+		fontSize: '14px',
+		fontStyle: 'normal',
+		fontWeight: '500',
+		lineHeight: 'normal',
+		backgroundColor: '#4ABD95',
+	},
+
+	[theme.breakpoints.down('sm')]: {},
+}));
